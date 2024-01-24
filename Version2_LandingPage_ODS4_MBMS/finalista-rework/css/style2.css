@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*le dice al navegador tomar en cuenta para cualquier valor que se especifique de borde o de relleno para el ancho o alto de un elemento*/
+    font-family: 'Poppins', sans-serif;
+}
+.contenedor {
+    position: absolute;
+    height: 200px; /* Alto de tu figura geométrica */
+    display: flex;
+} 
+
+.texto-superpuesto {
+    position: absolute;
+    top: 72%; /* Ubicación vertical del texto */
+    left: 80%; /* Ubicación horizontal del texto */
+    transform: translate(-50%, -50%); /* Centrar el texto */
+    z-index: 0; /* Capa del texto */
+    color: whitesmoke; /* Color del texto */
+    font-size: 24px; /* Tamaño del texto */
+    display: flex;
+}
+
+
+
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+    position: relative;
+    max-width: 80px;
+}
+a:hover {
+    color: #EC3740;      
+    text-shadow: -1rem -0.5rem 1rem black;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+
+}
+#pilarTexto {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color: #4C6B8B;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 span {
+    color: #699CC6;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textBox p{
+    color: #333;
+}
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #EC3740;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content .imgBox img {
+    max-width: 340px;
+}
+.thumb {
+    position:absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img {
+    max-width: 60px;
+}
+/* .thumb h3{
+    color: gray;
+    font-size: 2em;
+    line-height: 1.0em;
+    font-weight: 300;
+    line-height: 1.4em;
+    display: inline-flex;
+
+}
+.thumb h3 span {
+    color: gray;
+    padding-bottom: 2em;
+    font-size: 1.2em;
+    font-weight: 400;
+    
+} */
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+.circle {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+/*Footer*/
+form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4C6B8B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #699CC6;
+  }
+
+
+  footer {
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .container p {
+    margin: 5px 0;
+  }
+  
+  .container p:first-child {
+    font-weight: bold;
+  }
+  
+  /* Estilos para el nombre del autor */
+  .container p:first-child::after {
+    content: " - Maria Belen Martinez Sánchez";
+  }

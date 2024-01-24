@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./js/application.js">
+    <link rel="icon" href="./img/positivo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>GTA2030 Educación de Calidad</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<body class="container-fluid">
+    <header class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="./img/logo (1).png" class="logo" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#frame_principal">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#aliados">Aliados</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <section class="row frame_principal border-3 shadow rounded" id="frame_principal">
+        <div class="col-12 offset-lg-1 col-lg-6">
+            <div class="text_box">
+                <p class="titulo">Grupo de Trabajo Agenda 2030</p>
+                <p class="titulo_2" id="titulo_2">Educación de Calidad</p>
+                <p class="" id="principalText">
+                    El Objetivo de Desarrollo Sostenible número 4, "Educación de calidad", emerge como un faro 
+                    inspirador en nuestra búsqueda por un mundo más equitativo y próspero. Este ODS reconoce la 
+                    trascendental importancia de una educación inclusiva y equitativa para todos, considerándola 
+                    un pilar fundamental para el desarrollo humano. Sin embargo, a pesar de los esfuerzos, persisten 
+                    desafíos significativos: más de 265 millones de niños y jóvenes no tienen acceso a la educación, 
+                    mientras que muchos otros no logran adquirir habilidades básicas de lectura y matemáticas, lo que 
+                    subraya la necesidad urgente de mejorar la calidad educativa a nivel global.</p>
+                <p class="text-center">
+                    <a href="https://pactomundial.org.mx/tag/grupos-de-trabajo-agenda-2030/" target="_blank" class="pacto_link">Conoce más</a>
+                </p>
+            </div>
+            <div class="mt-3 mt-lg-5">
+                <div class="d-none d-lg-block text-center">
+                    <h3 class="mb-3">Los 3 Pilares</h3>
+                    <ul class="thumb d-flex justify-content-center" id="pilar" >
+                        <li class=>
+                            <img src="./img/thumb1.png" onclick="imgSlider('./img/img1.png'); changeCircleColor('#297D60'); changeImageAndText('./img/img1.png', 'Niñas y niños sanos y saludables aprenden mejor', 'Una educación de calidad debe considerar al estudiante como un participante activo y parte central del esfuerzo educativo. Niños, niñas y adolescentes traen cosas al entorno educativo y al grupo del que forman parte. Traen diversidad de experiencias, características, destrezas y condiciones que reflejan, tanto su situación previa como la actual, y que presentan obstáculos, así como oportunidades para la forma en que aprenden.', '#297D60') "><p>Primero</p>
+                        </li>
+                        <li>
+                            <img src="./img/thumb2.png" onclick="imgSlider('./img/img2.png'); changeCircleColor('#6E417A'); changeImageAndText('./img/img2.png', 'Niños y niñas con habilidades blandas', 'Las habilidades blandas son aquellos atributos o características de una persona que le permiten interactuar con otras de manera efectiva. Son el resultado de una combinación de habilidades sociales, de comunicación, de forma de ser, de acercamiento a los demás y otros factores que, para desarrollarse, requerirán de la voluntad para poner más atención en la forma en que nos relacionamos con los demás.', '#6E417A')"><p>Segundo</p>
+                        </li>
+                        <li>
+                            <img src="./img/thumb3.png" onclick="imgSlider('./img/img3.png'); changeCircleColor('#699CC6'); changeImageAndText('./img/img3.png', 'Entornos de aprendizaje saludables', 'En la actualidad, el entorno de aprendizaje ya no está dado por el aula de clases, el pizarrón, las instalaciones de la escuela, como conocimos hasta hace poco. Forma parte del entorno de aprendizaje, en este contexto actual, el acceso a la tecnología, las herramientas y materiales en casa, el espacio de estudios en que los niños y niñas reciben clases virtuales.', '#699CC6')"><p>Tercero</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center d-block d-lg-none">
+                    <h3 class="mb-3">Los 3 Pilares</h3>
+                    <ul class="thumb d-flex justify-content-center" id="pilar" >
+                        <li class=>
+                            <img src="./img/thumb1.png" data-bs-toggle="modal" data-bs-target="#primerModal"><p>Primero</p>
+                        </li>
+                        <li>
+                            <img src="./img/thumb2.png" data-bs-toggle="modal" data-bs-target="#segundoModal"><p>Segundo</p>
+                        </li>
+                        <li>
+                            <img src="./img/thumb3.png" data-bs-toggle="modal" data-bs-target="#tercerModal"><p>Tercero</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-5">
+            <div class="d-none d-lg-block circle">
+                <div class="imgBox">
+                    <img width="250px" height="230px" src="img/GTA_EducaciónDeCalidad_Blanco.png" class="ramas"><br>
+                </div>
+                <div class="textBox" style="max-width: 300px;">
+                    <p class="text-center text-wrap" id="pilarTexto">Los 3 pilares de la Educación de Calidad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row aliados border-3 shadow rounded mt-4 p-3 mb-4" id="aliados">
+        <h1 class="text-center">Aliados</h1>
+        <div class="col-12 col-lg-4 text-center d-flex justify-content-center my-2">
+            <div class="card" style="width: 18rem;">
+                <img src="img/aliados/nestle.png" class="card-img-top p-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">¿Quieres saber más?</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="https://www.nestle.com.mx/conoce-nuestra-historia" target="_blank" class="btn btn-primary">Visitanos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 text-center d-flex justify-content-center my-2">
+            <div class="card" style="width: 18rem;">
+                <img src="img/aliados/JAmx.png" class="card-img-top p-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">¿Te interesa algún programa?</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="https://www.jamexico.org.mx/nosotros" target="_blank" class="btn btn-primary">Preparáte</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 text-center d-flex justify-content-center my-2">
+            <div class="card" style="width: 18rem;">
+                <img src="img/aliados/Pacto.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">¿Qué otras iniciativas hay?</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="https://pactomundial.org.mx/pacto-mundial-mexico/" target="_blank" class="btn btn-primary">Conocelas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="" id="contacto">
+        <p>&copy; 2023 Maria Belen Martinez Sánchez. Todos los derechos reservados.</p>
+        <p>Agradecimientos especiales.</p>
+        <p>A mi familia y a JAMéxico</p>
+    </footer>
+    <div class="modal fade" id="primerModal" tabindex="-1" aria-labelledby="primerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="primerModalLabel">Niñas y niños sanos y saludables aprenden mejor</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Una educación de calidad debe considerar al estudiante como un participante activo y parte central del esfuerzo educativo. Niños, niñas y adolescentes traen cosas al entorno educativo y al grupo del que forman parte. Traen diversidad de experiencias, características, destrezas y condiciones que reflejan, tanto su situación previa como la actual, y que presentan obstáculos, así como oportunidades para la forma en que aprenden.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" style="background-color: #297D60;" class="btn text-white" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="segundoModal" tabindex="-1" aria-labelledby="segundoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="segundoModalLabel">Niñas y niños con habilidades blandas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Las habilidades blandas son aquellos atributos o características de una persona que le permiten interactuar con otras de manera efectiva. Son el resultado de una combinación de habilidades sociales, de comunicación, de forma de ser, de acercamiento a los demás y otros factores que, para desarrollarse, requerirán de la voluntad para poner más atención en la forma en que nos relacionamos con los demás.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" style="background-color: #6E417A;" class="btn text-white" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="tercerModal" tabindex="-1" aria-labelledby="tercerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tercerModalLabel">Entornos de aprendizaje saludables</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                En la actualidad, el entorno de aprendizaje ya no está dado por el aula de clases, el pizarrón, las instalaciones de la escuela, como conocimos hasta hace poco. Forma parte del entorno de aprendizaje, en este contexto actual, el acceso a la tecnología, las herramientas y materiales en casa, el espacio de estudios en que los niños y niñas reciben clases virtuales.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" style="background-color: #699CC6;" class="btn text-white" data-bs-dismiss="modal">Cerrar</button>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function changeImageAndText(imagePath, text, principalText, color){
+        const imageElement = document.querySelector('.ramas');
+        const textElement = document.getElementById('pilarTexto');
+        const textElement2 = document.getElementById('principalText');
+        const textElement3 = document.getElementById('titulo_2');
+        
+        imageElement.src = imagePath;
+        textElement.textContent = text;
+        textElement2.textContent = principalText;
+        textElement3.textContent = text;
+        textElement3.style.color = color;
+    }
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+    function imgSlider(anything){
+        document.querySelector('.ramas').src = anything;
+    }
+</script>
+</html>

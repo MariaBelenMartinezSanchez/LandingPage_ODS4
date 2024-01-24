@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.frame_principal{
+    padding-top: 140px;
+}
+
+.logo{
+    max-width: 150px;
+    margin-left: 70px;  
+}
+.titulo{
+    font-size: 2.5em;
+    color: #4C6B8B;
+    font-weight: 500;     
+}
+
+.titulo_2{
+    color: #699CC6;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.text_box{
+    max-width: 600px;
+}
+
+@media screen and (max-width:800px){
+    .frame_principal{
+        padding-top: 100px;
+    }
+    .logo{
+        max-width: 100px;
+        margin-left: 20px;
+    }
+    .titulo{
+        font-size: 2em;
+        color: #4C6B8B;
+        font-weight: 500;     
+    }
+    
+    .titulo_2{
+        color: #699CC6;
+        font-size: 3.5em;
+        font-weight: 900;
+    }
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(81.4% at 99% 99%);
+}
+
+.pacto_link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #EC3740;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.pacto_link:hover{
+    color: #494243;      
+    /*text-shadow: -1rem -0.5rem 1rem black;*/
+}
+
+.thumb{
+    list-style: none;
+}
+
+.thumb li{
+    float: left;
+    margin-right: 25px;
+}
+
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img {
+    max-width: 60px;
+}
+
+.imgBox{
+    position: relative;
+    top: 55%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    font-size: 24px;
+    display: flex;
+}
+.textBox{
+    position: relative;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    color: whitesmoke;
+    font-size: 24px;
+    font-weight: bold;
+    text-wrap: wrap;
+}
+
+footer {
+    width:100%;
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
